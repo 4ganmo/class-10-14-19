@@ -2,16 +2,18 @@
 public class Person extends NameHolder {
 	private String lastName;
 	
-	public Person() {
-		String temp1 = "bo";
-		String temp2 = "smith";
+	public Person() throws NameException {
+		String temp1 = "Bo";
+		String temp2 = "Alex";
 		lastName = temp1;
+		super.setFirstName(temp2);
 		
 		
 	}
-	public Person(String firstName, String lastName) {
+	public Person(String firstName, String lastName) throws NameException {
 		this.lastName = lastName;
 		super.setFirstName(firstName);
+		
 		
 		
 	
@@ -20,11 +22,12 @@ public class Person extends NameHolder {
 		
 	@Override
 	public String describeSelf() {
+		String description = "";
 		if(!firstName.isEmpty()) {
 			this.firstName = firstName; 
 		}
 		
-		return "I am so failing";
+		return description;
 		
 		
 		
