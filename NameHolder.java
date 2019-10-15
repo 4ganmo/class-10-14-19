@@ -8,13 +8,19 @@ public abstract class NameHolder {
 	//@override
 	public String toString() {
 	}{
-		String person =( "this is a persom" + firstName);
-		return firstName;
+		String person = "this is a person" + firstName;
+		return person;
 	}
 	
-	public void setFirstName(String name) {
-	
-		this.firstName = name;
+
+	public String getFirstName() {
+		return firstName;
+	}
+	protected void setFirstName(String firstName) {
+	if(firstName.isEmpty())
+		this.firstName = firstName;
+	else
+		throw new NameException("wrong");
 		
 	}
 	

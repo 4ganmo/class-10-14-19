@@ -5,7 +5,7 @@ class NameException extends Exception {
 		
 		public NameException(String message) {
 			this.message = message;
-			
+			super(message);
 			
 		}
 	
@@ -13,4 +13,4 @@ class NameException extends Exception {
 
 	}
 
-}
+

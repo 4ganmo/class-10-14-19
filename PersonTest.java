@@ -10,9 +10,18 @@ public class PersonTest {
 		
 		
 	}
+	
+	@Test 
+	public void constructorOrderTest() {
+		
+	}
+
+	
+	
 	@Test
-	void test() {
+	public void test() {
 		String firstName = "";
+		@SuppressWarnings("unused")
 		String lastName = "Smith";
 		Person x = new Person(firstName,lastName);
 		fail("not yet implemented");

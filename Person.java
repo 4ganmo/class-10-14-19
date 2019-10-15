@@ -22,7 +22,7 @@ public class Person extends NameHolder {
 		
 	@Override
 	public String describeSelf() {
-		String description = "";
+		String description = "First Name: " + super.getFirstName() + "Last Name: "+ lastName;
 		if(!firstName.isEmpty()) {
 			this.firstName = firstName; 
 		}
